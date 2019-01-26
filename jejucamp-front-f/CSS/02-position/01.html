@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS 레이아웃 시작하기</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+html, body, h1, h2, h3, h4, h5, h6, p, blockquote, code, img, dl, dt, dd, ol, ul, li, fieldset, legend, caption { margin: 0; padding: 0; border: 0; }
+div, span, article, section, header, footer, p, ul, li, fieldset, legend, label { box-sizing: border-box; }
+html { height: 100%; }
+
+div {
+    position: relative;
+    /*top: -30px;*/
+    width: 500px;
+    height: 500px;
+    background: red;
+}
+
+body {
+    padding-top: 52px;
+}
+
+section {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+    width: 200px;
+    height: 200px;
+    background: yellow;
+}
+
+p {
+    /*position: static;*/
+    /*position: absolute;*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: green;
+}
+</style>
+</head>
+
+<body>
+
+    <div>
+        <section>section</section>
+    </div>
+    asdadadad
+    asad
+    <p>para</p>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

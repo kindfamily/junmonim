@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS 레이아웃 시작하기</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+html, body, h1, h2, h3, h4, h5, h6, p, blockquote, code, img, dl, dt, dd, ol, ul, li, fieldset, legend, caption { margin: 0; padding: 0; border: 0; }
+div, span, article, section, header, footer, p, ul, li, fieldset, legend, label { box-sizing: border-box; }
+
+html {
+    /*font-size: 16px;*/
+    font-size: 30px;
+}
+
+/*rem: root em*/
+/*root는 <html>*/
+
+.grid {
+    font-size: 0.7rem;
+    /*padding: 1em;*/
+    padding: 1rem;
+}
+
+.global-header {
+    /*padding: 30px;*/
+    background: red;
+}
+
+.content-section {
+    /*padding: 1em;*/
+    background: orange;
+}
+
+.content-section:nth-child(2) {
+    background: pink;
+}
+
+.global-footer {
+    /*padding: 1em;*/
+    background: gray;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h1 span {
+    font-size: 0.5em;
+}
+
+@media (min-width: 700px) and (max-width: 800px) {
+    
+}
+
+@media (min-width: 1000px) {
+    body {
+        background: yellow;
+    }
+
+    .grid {
+        max-width: 1050px;
+        margin: 0 auto;
+        border: 3px solid black;
+    }
+
+    .container {
+        /*max-width: 1050px;*/
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .content-container {
+        display: flex;
+    }
+
+    .content-section:nth-child(1) {
+        flex: 6;
+    }
+
+    .content-section:nth-child(2) {
+        flex: 4;
+    }
+}
+</style>
+</head>
+
+<body>
+    
+    <article class="container">
+        <header class="global-header">
+            <div class="grid">
+                <h1>
+                    header
+                    <span>sssssss</span>
+                </h1>
+            </div>
+        </header>
+        <div class="content-container">
+            <section class="content-section">
+                <div class="grid">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur ab suscipit molestias, corporis perspiciatis harum autem quo asperiores porro consequuntur, eligendi, sed velit officia voluptatem obcaecati qui omnis ipsum facilis.
+                </div>
+            </section>
+            <section class="content-section">
+                <div class="grid">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </div>
+            </section>
+        </div>
+        <footer class="global-footer">
+            <div class="grid">
+                footer
+            </div>
+        </footer>
+    </article>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

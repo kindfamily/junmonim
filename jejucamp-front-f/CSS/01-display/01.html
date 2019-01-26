@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS 레이아웃 시작하기</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+html, body, h1, h2, h3, h4, h5, h6, p, blockquote, code, img, dl, dt, dd, ol, ul, li, fieldset, legend, caption { margin: 0; padding: 0; border: 0; }
+/*div, span, article, section, header, footer, p, ul, li, fieldset, legend, label { box-sizing: border-box; }*/
+html { height: 100%; }
+body { min-height: 100%; background: #333; }
+div { display: block; background: yellow; }
+span { display: block; background: #f00; }
+a { background: skyblue; }
+p { background: skyblue; }
+h1 { background: pink; }
+/*.container { width: 50%; }*/
+/*block, inline, inline-block */
+
+.container {
+    background: #666;
+}
+
+.container div {
+    /*display: none;*/
+    box-sizing: border-box;
+    width: 200px;
+    height: 100px;
+    margin: 20px;
+    padding: 20px;
+    border: 10px solid tomato;
+}
+
+a {
+    display: inline-block;
+    width: 100px;
+    padding: 20px;
+}
+</style>
+</head>
+
+<body>
+    
+    <div class="container">
+        <p>aa</p>
+        <div>
+            DIV
+        </div>
+        <span>SPAN</span>
+        여기를 누르면 <a href="http://google.com">Google</a>로 이동
+        <h1>타이틀</h1>
+    </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

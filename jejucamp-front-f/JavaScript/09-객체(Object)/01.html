@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JavaScript</title>
+<script>
+// 객체(Object): 속성(property)와 메소드(method)를 가지고 있는 집합체.
+var person1 = {};
+person1.username = '사미자';
+person1.age = 18;
+person1.introduce = function() {
+    console.log('안녕? 나는 ' + this.username + '라고 하고 ' + this.age + '살이야.');
+};
+
+var person2 = {
+    username: '제니',
+    age: 50,
+    introduce: function() {
+        console.log('안녕? 나는 ' + this.username + '라고 하고 ' + this.age + '살이야.');
+    }
+};
+
+person1.introduce();
+person2.introduce();
+</script>
+</head>
+<body>
+<p>body에 작성한 내용</p>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

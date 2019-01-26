@@ -1,0 +1,46 @@
+body {
+    background: red;
+}
+
+header {
+    background: green;
+}
+
+header a {
+    border: 5px solid yellow;
+}
+
+h1 {
+    color: yellow;
+}
+
+#page-header {
+    border: 10px dashed pink;
+}
+
+.sub-title {
+    padding: 0.5em;
+    border-bottom: 3px dotted dodgerblue;
+    background: yellow;
+}
+
+.sub-title.special {
+    color: green;
+}
+
+/*.sub-title-special {
+    color: red;
+}*/
+
+#page-header > a {
+
+}
+
+
+
+
+
+
+
+
+
