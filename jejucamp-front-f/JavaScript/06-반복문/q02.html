@@ -10,17 +10,19 @@ document.write('*');
 document.write('<br>');
 반복문 for 내부에 위의 두 문장을 사용해서 아래와 같은 무늬를 출력해보세요.
 
-
  *****
  ****
  ***
  **
  *
 
-
-
 */
-
+for (var x = 6; x >= 0; x--){
+    for (var i = 0; i < x; i++){
+        document.write('*');
+    }
+    document.write('<br>');
+}
 
 </script>
 </head>
