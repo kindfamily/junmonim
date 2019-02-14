@@ -327,6 +327,22 @@ h1 span {
         margin: 0 auto;
     }
 
+    .content-signup{
+        padding: 2rem 3rem;
+    }
+
+    .content-section-main{
+        display: flex;
+    }
+
+    .content-section-main:nth-child(1) {
+        flex: 6;
+    }
+
+    .content-section-main:nth-child(2) {
+        flex: 4;
+    }
+
 
     .content-area {
         padding-top: 3rem;
@@ -386,9 +402,6 @@ h1 span {
         margin-left: 3rem;
     }
 
-
-
-
 /* 아래서 부터 기존 css */
     .grid {
         /* max-width: 1050px; */
@@ -415,6 +428,9 @@ h1 span {
     .content-section:nth-child(2) {
         flex: 4;
     }
+
+
+    
 }
 </style>
 </head>
@@ -475,25 +491,26 @@ h1 span {
                     </div>
                 </div>
          </div>
-
         <!-- global-header 끝 -->
 
 
         <!-- main-content 시작 -->
         <div class="main-container">
-            <div class="grid-main">
-            <section class="content-section-main">
-                <h1 class="main-copy">
+            <div class="grid-main content-section-main">
+                <section class="content-section-main">
+                    <div class="content-signup">
+                        <div>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur ab suscipit molestias, corporis perspiciatis harum autem quo asperiores porro consequuntur, eligendi, sed velit officia voluptatem obcaecati qui omnis ipsum facilis.
+
+                        </div>
+                        <div></div>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur ab suscipit molestias, corporis perspiciatis harum autem quo asperiores porro consequuntur, eligendi, sed velit officia voluptatem obcaecati qui omnis ipsum facilis.
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur ab suscipit molestias, corporis perspiciatis harum autem quo asperiores porro consequuntur, eligendi, sed velit officia voluptatem obcaecati qui omnis ipsum facilis.
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur ab suscipit molestias, corporis perspiciatis harum autem quo asperiores porro consequuntur, eligendi, sed velit officia voluptatem obcaecati qui omnis ipsum facilis.
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur ab suscipit molestias, corporis perspiciatis harum autem quo asperiores porro consequuntur, eligendi, sed velit officia voluptatem obcaecati qui omnis ipsum facilis.
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur ab suscipit molestias, corporis perspiciatis harum autem quo asperiores porro consequuntur, eligendi, sed velit officia voluptatem obcaecati qui omnis ipsum facilis.
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur ab suscipit molestias, corporis perspiciatis harum autem quo asperiores porro consequuntur, eligendi, sed velit officia voluptatem obcaecati qui omnis ipsum facilis.
-                    
-                </div>
-            </section>
+         
+                    </div>
+                </section>
+                <section class="content-section-main">
+                    <img src="./images/main.png" alt="메인사진">
+                </section>
             </div>
         </div>
 
