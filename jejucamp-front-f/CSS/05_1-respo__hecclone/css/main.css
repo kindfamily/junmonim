@@ -1,0 +1,151 @@
+.cafe-item {
+    margin-bottom: 3rem;
+}
+
+.cafe-item-info h2 {
+    margin: 0.5em 0;
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+.cafe-item-contact {
+    margin-top: 1em;
+    font-size: 0.8rem;
+}
+
+.cafe-item-contact li {
+    margin: 0.5em 0;
+}
+
+.cafe-item-contact i {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+}
+
+.content-section {
+    margin: 2em 0;
+}
+
+.page-content h1 {
+    margin-bottom: 1em;
+    font-size: 2.5rem;
+    font-weight: 200;
+}
+
+.page-content h2 {
+    margin-bottom: 1em;
+    font-size: 1.5rem;
+}
+
+.page-content p {
+    line-height: 1.6;
+}
+
+.form-row {
+    margin-bottom: 1.5em;
+}
+
+.form-row-btn-con {
+    text-align: center;
+}
+
+.form-row-content {
+    display: flex;
+    align-items: center;
+}
+
+.form-row-label {
+    width: 30%;
+}
+
+.form-row-input {
+    flex: 1;
+}
+
+.form-row-input input[type='text'],
+.form-row-input input[type='password'],
+.form-row-input input[type='search'],
+.form-row-input input[type='email'] {
+    width: 100%;
+}
+
+.form-row-input label {
+    white-space: nowrap;
+}
+
+@media (min-width: 800px) {
+    .cafe-item {
+        display: flex;
+        align-items: center;
+    }
+
+    .cafe-item-photo {
+        flex: 6;
+        margin-right: 2rem;
+    }
+
+    .cafe-item-info {
+        flex: 4;
+    }
+
+    .jejumap-header {
+        font-size: 1.5rem;
+    }
+
+    .jejumap-container {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .big-btn {
+        display: inline-flex;
+        padding: 0.5em 3em;
+        font-size: 1.2rem;
+    }
+
+    .jejumap-container {
+        text-align: center;
+    }
+
+    .main-copy {
+        font-size: 2.5rem;
+        letter-spacing: -0.05em;
+        word-spacing: 0.05em;
+    }
+
+    .cafe-item-info h2 {
+        margin-top: -1em;
+        font-size: 2.5rem;
+        letter-spacing: -0.05em;
+        word-spacing: 0.05em;
+    }
+
+    .cafe-item-photo {
+        margin-right: 3rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
