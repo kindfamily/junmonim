@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>CSS 레이아웃 시작하기</title>
+<title>hecksterclone</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -132,7 +132,7 @@ body.page-home .content-container {
     left: 0;
     z-index: 100;
     width: 100%;
-    height: 55px;
+    height: 70px;
     background: white;
     border-bottom: 0.1px solid black;
 }
@@ -241,14 +241,25 @@ body.menu-on .global-menu {
 
 /* main 화면 넣기위한 공간 */
 .content-section-main{
-    padding: 0 5em;
-    background:white;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.content-section-main div{
+    border: 1px solid black;
+}
+
+
+.content-signup{
+    background-color: yellow;
+    padding: 2rem 3rem;
 }
 
 .main-copy {
     text-align: center;
-    font-size: 1.3rem;
-    font-weight: 200;
+    /* font-size: 1.3rem; */
+    /* font-weight: 200; */
 }
 
 
@@ -327,13 +338,20 @@ h1 span {
         margin: 0 auto;
     }
 
-    .content-signup{
-        padding: 2rem 3rem;
-    }
-
+    
     .content-section-main{
         display: flex;
     }
+
+    .content-section-main > div{
+        border: 1px solid black;
+    }
+    
+
+    .content-signup{
+        /* padding: 2rem 3rem; */
+    }
+
 
     .content-section-main:nth-child(1) {
         flex: 6;
@@ -428,9 +446,6 @@ h1 span {
     .content-section:nth-child(2) {
         flex: 4;
     }
-
-
-    
 }
 </style>
 </head>
@@ -493,19 +508,39 @@ h1 span {
          </div>
         <!-- global-header 끝 -->
 
-
         <!-- main-content 시작 -->
         <div class="main-container">
             <div class="grid-main content-section-main">
                 <section class="content-section-main">
                     <div class="content-signup">
                         <div>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur ab suscipit molestias, corporis perspiciatis harum autem quo asperiores porro consequuntur, eligendi, sed velit officia voluptatem obcaecati qui omnis ipsum facilis.
-
+                            <div>
+                                <h1>Join the world’s best hardware engineers.</h1>
+                                <p>
+                                    Create your account to explore thousands of projects, build your skills, and discover new products and technologies.
+                                </p>
+                            </div>
+                            <div>
+                                <div>google</div>
+                                <div>facebook</div>
+                                <span>
+                                    more options >
+                                </span>
+                                <span>or</span>
+                                <form action="">
+                                        <label class="hckui__inputs__label " for="full_name_or_nickname_name">Full name or nickname</label>
+                                        <input type="text" autofocus="" class="hckui__inputs__input  " id="full_name_or_nickname_name" name="name" placeholder="First and last name" value="">
+                                        <label class="hckui__inputs__label " for="full_name_or_nickname_name">Full name or nickname</label>
+                                        <input type="text" autofocus="" class="hckui__inputs__input  " id="full_name_or_nickname_name" name="name" placeholder="First and last name" value="">
+                                        <button class="hckui__buttons__lg undefined hckui__layout__fullWidth" type="submit">Join Hackster</button>
+                                </form>
+                                <div class="hckui__layout__marginTop30 hckui__typography__textCenter">Already have an account? <a class="hckui__typography__linkBlue " href="javascript:void(0)" type="button">Log in.</a></div>
+                            </div>
+                            
+                            <div>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur ab suscipit molestias, corporis perspiciatis harum autem quo asperiores porro consequuntur, eligendi, sed velit officia voluptatem obcaecati qui omnis ipsum facilis.
+                            </div>
                         </div>
-                        <div></div>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur ab suscipit molestias, corporis perspiciatis harum autem quo asperiores porro consequuntur, eligendi, sed velit officia voluptatem obcaecati qui omnis ipsum facilis.
-         
                     </div>
                 </section>
                 <section class="content-section-main">
